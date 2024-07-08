@@ -1,0 +1,53 @@
+.courses__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    color: white;
+    margin-top: 100px;
+    .courses__title {
+        position: relative;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #1a2a47;
+        padding-bottom: 10px;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 20%;
+            height: 3px;
+            background: #31d7a9;
+        }
+    }
+    .courses__item {
+        //Chỉnh margin của thư viện React Slick
+        .slick-slider {
+            .slick-slide > div {
+                margin: 0 20px;
+            }
+            .slick-prev:before,
+            .slick-next:before {
+                display: none;
+            }
+            .slick-arrow {
+                color: white;
+                font-size: 30px;
+                &:hover {
+                    color: rgb(161, 161, 161);
+                }
+                .fa-angle-right {
+                    margin-left: 10px;
+                }
+                .fa-angle-left {
+                    margin-left: -10px;
+                }
+            }
+            // Chỉnh dots thư viện React Slick
+            .slick-dots li button:before {
+                color: white;
+            }
+        }
+    }
+}

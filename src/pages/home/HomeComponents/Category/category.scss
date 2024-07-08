@@ -1,0 +1,17 @@
+.category__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-top: 100px;
+    .cate__item {
+        .item__container {
+            border: 2px solid #0f1d46;
+            padding: 25px;
+            text-align: center;
+            transition: all 0.3s;
+            cursor: pointer;
+            &:hover {
+                border-color: #803f13;
+            }
+        }
+    }
+}

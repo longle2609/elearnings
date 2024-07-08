@@ -1,0 +1,12 @@
+.homeMobile__container {
+    background-image: url("../../../../assets/homePageImg/bg-app.png");
+    background-repeat: no-repeat;
+    background-color: #0f1c44;
+    background-position: right center;
+    background-size: contain;
+    margin-top: 120px;
+    .homeMobile__item {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,77 @@
+.blog__container {
+    background: #001232;
+    .blog__banner {
+        background-image: url("../../assets/homePageImg/BlogBanner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        min-height: 420px;
+        padding-top: 134px;
+        padding-bottom: 15px;
+        position: relative;
+        &::after {
+            content: "";
+            background: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .blogBanner__item {
+            position: relative;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            top: 130px;
+            z-index: 1;
+            .blogBanner__title {
+                font-weight: bold;
+                font-size: 3rem;
+                line-height: 120%;
+                color: #fff;
+                margin-top: 0;
+                font-style: italic;
+            }
+            hr {
+                background-image: url(../../assets/homePageImg/hr-yellow.png);
+                width: 64px;
+                height: 10px;
+                display: inline-block;
+                border: none;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .blog__item {
+        max-width: 1170px;
+        margin: 0 auto;
+        margin-top: 70px;
+        .item__content {
+            .content__bg {
+                background: #0f1c44;
+                @apply p-4;
+                .blog__title {
+                    color: #e8e2ff;
+                    @apply text-2xl font-bold;
+                }
+                .text {
+                    color: #8e88a8;
+                    @apply leading-6 mt-3 mb-4;
+                }
+                .tag {
+                    color: white;
+                }
+            }
+        }
+    }
+    .suggest__topic {
+        @apply text-[#e8e2ff];
+        .blog__nav {
+            background: #0f1c44;
+            @apply p-4;
+        }
+    }
+}
